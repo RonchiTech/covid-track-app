@@ -1,0 +1,14 @@
+.SearchResults {
+  margin: 50px 0;
+}
+.Input,
+.Button {
+  padding: 15px 5px;
+}
+.Input {
+  width: 250px;
+  margin-right: 10px;
+}
+.Button {
+  width: 80px;
+}

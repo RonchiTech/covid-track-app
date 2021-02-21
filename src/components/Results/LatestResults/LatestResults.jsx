@@ -22,7 +22,7 @@ const mapDispatchToProps = (dispatch) => {
 };
 const mapStateToProps = (state) => {
     return {
-        lastUpdate: state.lastUpdate
-    }
+      lastUpdate: state.latest.lastUpdate,
+    };
 }
 export default connect(mapStateToProps, mapDispatchToProps)(LatestResults);

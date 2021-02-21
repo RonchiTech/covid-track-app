@@ -14,10 +14,10 @@ const resultList = ({ confirmed, recovered, critical, deaths }) => {
 };
 const mapStateToProps = (state) => {
   return {
-    confirmed: state.confirmed,
-    recovered: state.recovered,
-    critical: state.critical,
-    deaths: state.deaths,
+    confirmed: state.latest.confirmed,
+    recovered: state.latest.recovered,
+    critical: state.latest.critical,
+    deaths: state.latest.deaths,
   };
 };
 export default connect(mapStateToProps)(resultList);

@@ -5,12 +5,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import { createStore, compose, applyMiddleware } from 'redux';
+import { createStore, compose, applyMiddleware, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
-import reducer from './redux/reducers/LatestResultsReducer';
+import LatestResultReducer from './redux/reducers/LatestResultsReducer';
+import SearchResultReducer from './redux/reducers/SearchResultsReducer';
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const reducers = combineReducers({
+  latest: LatestResultReducer,
+  searched:SearchResultReducer,
+});
 const store = createStore(
-  reducer,
+  reducers,
   composeEnhancers(applyMiddleware(thunk))
 );
 ReactDOM.render(

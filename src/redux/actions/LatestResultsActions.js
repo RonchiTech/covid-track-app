@@ -18,7 +18,7 @@ export const fetchLatestResultStart = () => {
         dispatch(fetchLatestResultSuccess(response.data[0]));
       })
       .catch(function (error) {
-        console.error(error);
+        console.log(error);
         dispatch(fetchLatestResultFail(error));
       });
     
