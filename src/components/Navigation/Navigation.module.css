@@ -1,0 +1,32 @@
+.NavBar {
+  text-align: center;
+  width: 100%;
+}
+.NavBar ul {
+  list-style: none;
+  text-align: center;
+  padding: 25px 0;
+}
+.NavBar li {
+  margin: 25px 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+.NavBar a {
+  display: block;
+  text-decoration: none;
+  padding: 15px 10px;
+}
+.NavStyle {
+  color: black;
+  text-decoration: none;
+  padding: 15px 25px;
+}
+.active {
+  color: white;
+  background-color: #373f51;
+  border-radius: 15px;
+}
